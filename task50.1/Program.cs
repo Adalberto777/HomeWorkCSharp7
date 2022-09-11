@@ -39,7 +39,7 @@ int y = int.Parse(Console.ReadLine());
 
 void FindElement(int[,] array, int x1, int y1) // поиск в случайном массиве числа по введенным пользователем индексам
 {
-   if(x1 > array.GetLength(0) - 1 | y1 > array.GetLength(1) - 1 | x1 < 0 | y1 <0)
+   if(x1 > array.GetLength(0) - 1 || y1 > array.GetLength(1) - 1 || x1 < 0 || y1 <0)
    {
         Console.WriteLine("в массиве нет элемента с такими параметрами");
    }

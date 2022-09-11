@@ -37,10 +37,10 @@ void FindAverageColumn(int[,] array) //вычисление и вывод сре
         double average = 0;
         for (int i = 0; i < array.GetLength(0); i++)
         {
-            average += (double)array[i, j] / array.GetLength(0);            
+            average += array[i, j];            
         }    
         Console.Write($"среднее арифметическое {j}-го столбца = ");   
-        Console.WriteLine($"{Math.Round(average, 1)}      ");
+        Console.WriteLine($"{Math.Round(average, 1)/ array.GetLength(0)}");
     }
 }
 
